@@ -1,0 +1,48 @@
+{
+  "name": "react-swipey",
+  "version": "0.0.0",
+  "description": "A reading progress component for React",
+  "main": "./dist/index.js",
+  "author": {
+    "url": "https://theomjon.es",
+    "name": "Theo Messenger-Jones"
+  },
+  "bugs": {
+    "url": "https://github.com/theomjones/react-swipey/issues",
+    "email": "theomjones@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/theomjones/react-swipey"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "rollup": "^0.63.4",
+    "rollup-plugin-babel": "^3.0.7",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel src -d dist --copy-files",
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
